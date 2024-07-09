@@ -1,12 +1,12 @@
 import clsx from 'clsx';
 import css from './Button.module.css';
 
-export const Button = ({
+export default function Button({
   selected = false,
   type = 'button',
   children,
   ...otherProps
-}) => {
+}) {
   return (
     <button
       className={clsx(css.btn, {
@@ -18,4 +18,4 @@ export const Button = ({
       {children}
     </button>
   );
-};
+}

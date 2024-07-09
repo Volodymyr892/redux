@@ -1,8 +1,8 @@
-import { StatusFilter } from '../StatusFilter/StatusFilter';
-import { TaskCounter } from '../TaskCounter/TaskCounter';
+import StatusFilter from '../StatusFilter/StatusFilter';
+import TaskCounter  from '../TaskCounter/TaskCounter';
 import css from './AppBar.module.css';
 
-export const AppBar = () => {
+export default function AppBar () {
   return (
     <header className={css.wrapper}>
       <section className={css.section}>
@@ -15,4 +15,4 @@ export const AppBar = () => {
       </section>
     </header>
   );
-};
+}
